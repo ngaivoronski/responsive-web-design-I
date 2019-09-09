@@ -1,3 +1,124 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/******* GENERAL STYLE *******/
+body {
+    width: 90%;
+    margin: auto;
+}
 
+p, li {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+    list-style-type: square;
+}
+
+h1, h2, h3 {
+    font-family: 'bangers', cursive;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    color: gray;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+/******* HEADER STYLE *******/
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header .header-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-bar nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+header .header-bar .logo-div {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .header-title {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+header .header-title .getting-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-title .getting-started h1{
+    font-size: 70px;
+    margin: 0 50px;
+}
+
+header .header-title .getting-started button {
+    width: 170px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin: 20px 0;
+}
+
+/******* MIDDLE CONTENT STYLE *******/
+
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.middle-content .two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-content .two-columns .text-container {
+    width: 50%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+    margin: 10px 0px;
+}
+
+.middle-content .middle-img {
+    width: 100%;
+    margin: auto;
+}
+
+.middle-content .three-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-content .three-columns .text-container {
+    width: 33%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+    margin: 10px 0px;
+}
+
+footer .copyright {
+    text-align: center;
+}
