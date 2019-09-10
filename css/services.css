@@ -1,6 +1,5 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /******* GENERAL STYLE *******/
+
 body {
     width: 90%;
     margin: auto;
@@ -31,8 +30,6 @@ hr {
 
 /******* HEADER STYLE *******/
 
-    /*** DESKTOP DISPLAY ***/
-
 header {
     display: flex;
     flex-direction: column;
@@ -55,33 +52,6 @@ header .header-bar .logo-div {
     width: 40%;
     display: flex;
     justify-content: flex-end;
-}
-
-header .header-title {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-header .header-title .getting-started{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header .header-title .getting-started h1{
-    font-size: 70px;
-    margin: 0 50px;
-}
-
-header .header-title .getting-started button {
-    width: 170px;
-    background-color: white;
-    border: 2px solid black;
-    font-size: 16px;
-    padding: 7px 10px;
-    margin: 20px 0;
 }
 
     /*** TABLET DISPLAY ***/
@@ -115,19 +85,11 @@ header .header-title .getting-started button {
         text-align: center;
     }
 
-    header .header-title {
-        flex-direction: column;
-    }
-
-    header .header-title img {
-        width: 0px;
-    }
 }
 
     /*** MOBILE DISPLAY ***/
 
 @media (max-width: 500px) {
-
     header .header-bar {
         flex-direction: column-reverse;
         align-items: center;
@@ -161,86 +123,81 @@ header .header-title .getting-started button {
         width: 100%;
         text-align: center;
     }
-
-    header .header-title {
-        flex-direction: column;
-    }
-
-    header .header-title img {
-        width: 0px;
-    }
-
 }
 
-/******* MIDDLE CONTENT STYLE *******/
-
-.middle-content {
+header .services-header-image {
     display: flex;
-    flex-direction: column;
+    align-items: stretch;
+}
+
+/******* LIST OF SERVICES STYLE *******/
+
+.services-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: auto;
 }
 
-.middle-content .two-columns {
-    display: flex;
-    justify-content: space-between;
+.services-listing .service-item {
+    width: 45%;
+    border: 1px solid black;
+    margin: 20px 0px;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
 }
 
-.middle-content .two-columns .text-container {
-    width: 50%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-    margin: 10px 0px;
-}
-
-.middle-content .middle-img {
-    width: 100%;
-    margin: auto;
-}
-
-.middle-content .three-columns {
-    display: flex;
-    justify-content: space-between;
-}
-
-.middle-content .three-columns .text-container {
-    width: 33%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-    margin: 10px 0px;
+.services-listing .service-item button {
+    width: 100px;
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
     /*** MOBILE AND TABLET DISPLAY ***/
 
 @media (max-width: 500px) {
-    .middle-content .two-columns {
+    .services-listing .service-item {
+        width: 100%;
+    }
+}
+
+/******* SERVICE INFO STYLE *******/
+
+.services-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.services-info .services-facts {
+    width: 50%;
+}
+
+.services-info img {
+    width: 50%;
+}
+
+    /*** MOBILE AND TABLET DISPLAY ***/
+
+@media (max-width: 800px) {
+    .services-info {
         flex-direction: column;
     }
 
-    .middle-content .two-columns .text-container {
+    .services-info .services-facts {
         width: 100%;
-        padding: 0 1%;
-        padding-bottom: 10px;  
     }
-
-    .middle-content .three-columns {
-        flex-direction: column;
-    }
-
-    .middle-content .three-columns .text-container {
+    .services-info img {
         width: 100%;
-        padding: 0 1%;
-        padding-bottom: 10px;  
     }
-
 }
 
-/******* FOOTER CONTENT STYLE *******/ 
+/******* FOOTER STYLE *******/
 
-footer .contact-info {
-    margin: .5em 0;
-}
-
-footer .copyright {
+footer {
     text-align: center;
-    margin: 2em 0;
 }
+
